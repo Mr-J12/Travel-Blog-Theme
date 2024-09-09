@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skill.css">
+    <script>
+        function scrollDown() {
+          const element = document.getElementById('reach');
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      </script>
+    <title>About Me</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+               Blog Theme
+            </div>
+            <div class="menu">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="post.html">Post</a>
+                <a href="skill.html">Skills</a>
+            </div>
+            <div class="contact">
+                <a href="https://www.instagram.com/jugr_1697/">Contact</a>
+            </div>
+        </nav>
+        <section class="h-text">
+            <h1>
+            My Skills
+            </h1>
+            <button id="scrollButton" onclick="scrollDown()">Click To View</button>
+        </section>
+        </header>
+        <video controls autoplay width="1515" id="myVideo">
+            <source src="vid.mp4" type="video/mp4">
+        </video>
+        <br><br>
+<div id="reach">
+    <div class="con">
+<h2> My Technical Skills </h2>
+<img src="tec.jpg" alt="">
+<img src="ps.jpg" alt="">
+</div>
+</div>
+<br><br><br>
+<div class="con">
+    <h2> My Soft Skills </h2>
+    <img src="sss.jpg" alt=""><br>
+    <img src="ss.jpg" alt="">
+</div>
+</body>
+</html>
