@@ -1,62 +1,85 @@
-*{
-    padding: 0%;
-    margin: 0%;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-header{
+
+header {
     width: 100%;
     height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('11.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('11.jpg');
     background-size: cover;
+    background-position: center;
 }
-nav{
+
+nav {
     width: 100%;
-    height: 100%;
-    color: orange;
+    height: auto;
+    color: #FF5722;
     display: flex;
     justify-content: space-around;
-    padding-top: 30px;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
-.logo{
-    font-size: 25px;
+
+.logo {
+    font-size: 28px;
     letter-spacing: 2px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
 }
-.menu a{
+
+.menu a {
     text-decoration: none;
     color: white;
-    padding: 10px 20px 30px;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-top: 10px;
+    font-size: 18px;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 10px 20px;
     position: relative;
-    padding: 0 10px;
+    transition: 0.3s;
 }
-.menu a:after{
+
+.menu a:after {
     content: "";
     position: absolute;
-    background-color: orange;
+    background-color: #FF5722;
     height: 3px;
     width: 0;
     left: 0;
-    bottom: -10px;
-    transition: 0.4s linear;
+    bottom: 0;
+    transition: 0.3s;
 }
-.menu a:hover{
-    color: white;
+
+.menu a:hover {
+    color: #FF5722;
 }
-.menu a:hover:after{
+
+.menu a:hover:after {
     width: 100%;
 }
-.contact a{
-    color: orange;
-    padding-top: 10px;
+
+.contact a {
+    color: #FF5722;
+    font-size: 18px;
+    font-family: 'Segoe UI', sans-serif;
+    text-decoration: none;
     padding: 10px 20px;
-    font-size: 25px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid #FF5722;
+    border-radius: 5px;
+    transition: 0.3s;
 }
-.h-text{
-    max-width: 650px;
+
+.contact a:hover {
+    background-color: #FF5722;
+    color: white;
+}
+
+.h-text {
+    max-width: 800px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -64,29 +87,77 @@ nav{
     text-align: center;
     color: white;
 }
-.h-text span{
-    letter-spacing: 5px;
-    font-size: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+.h-text h1 {
+    font-size: 4em;
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: 30px;
 }
-.h-text h1{
-    font-size: 3.5em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#text{
-    font-size: 35px;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
 #scrollButton {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 10px;
-    background-color: rgb(255, 182, 46);
-    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #FF5722;
+    color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    padding-right: 20px;
+    transition: 0.3s;
 }
-#myvideo{
-    width: 100%;
-    height: 100%;
+
+#scrollButton:hover {
+    background-color: #f4511e;
+    transform: translateY(-2px);
+}
+
+.experience-container {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.experience-item {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.experience-item h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.experience-item h3 {
+    color: #FF5722;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.experience-item ul {
+    list-style-type: none;
+}
+
+.experience-item ul li {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.experience-item ul li:before {
+    content: "•";
+    color: #FF5722;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
 }

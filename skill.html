@@ -4,53 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="skill.css">
-    <script>
-        function scrollDown() {
-          const element = document.getElementById('reach');
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      </script>
-    <title>About Me</title>
+    <title>Skills</title>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-               Blog Theme
+               John Doe
             </div>
             <div class="menu">
                 <a href="home.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="post.html">Post</a>
+                <a href="about.html">Experience</a>
+                <a href="post.html">Projects</a>
                 <a href="skill.html">Skills</a>
             </div>
             <div class="contact">
-                <a href="https://www.instagram.com/jugr_1697/">Contact</a>
+                <a href="https://www.linkedin.com/">LinkedIn</a>
             </div>
         </nav>
         <section class="h-text">
-            <h1>
-            My Skills
-            </h1>
-            <button id="scrollButton" onclick="scrollDown()">Click To View</button>
+            <h1>Technical Expertise</h1>
+            <button id="scrollButton" onclick="scrollDown()">View Skills</button>
         </section>
-        </header>
-        <video controls autoplay width="1515" id="myVideo">
-            <source src="vid.mp4" type="video/mp4">
-        </video>
-        <br><br>
-<div id="reach">
-    <div class="con">
-<h2> My Technical Skills </h2>
-<img src="tec.jpg" alt="">
-<img src="ps.jpg" alt="">
-</div>
-</div>
-<br><br><br>
-<div class="con">
-    <h2> My Soft Skills </h2>
-    <img src="sss.jpg" alt=""><br>
-    <img src="ss.jpg" alt="">
-</div>
+    </header>
+
+    <div id="reach" class="skills-container">
+        <section class="skill-category">
+            <h2>Frontend Development</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>React.js</h3>
+                    <div class="progress-bar" data-progress="90"></div>
+                </div>
+                <div class="skill-item">
+                    <h3>Vue.js</h3>
+                    <div class="progress-bar" data-progress="85"></div>
+                </div>
+                <div class="skill-item">
+                    <h3>HTML/CSS</h3>
+                    <div class="progress-bar" data-progress="95"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skill-category">
+            <h2>Backend Development</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Node.js</h3>
+                    <div class="progress-bar" data-progress="88"></div>
+                </div>
+                <div class="skill-item">
+                    <h3>Python</h3>
+                    <div class="progress-bar" data-progress="82"></div>
+                </div>
+                <div class="skill-item">
+                    <h3>SQL</h3>
+                    <div class="progress-bar" data-progress="85"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skill-category">
+            <h2>Tools & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Git</h3>
+                    <div class="progress-bar" data-progress="90"></div>
+                </div>
+                <div class="skill-item">
+                    <h3>Docker</h3>
+                    <div class="progress-bar" data-progress="80"></div>
+                </div>
+                <div class="skill-item">
+                    <h3>AWS</h3>
+                    <div class="progress-bar" data-progress="75"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function scrollDown() {
+            const element = document.getElementById('reach');
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Animate progress bars
+        document.addEventListener('DOMContentLoaded', function() {
+            const bars = document.querySelectorAll('.progress-bar');
+            bars.forEach(bar => {
+                const progress = bar.getAttribute('data-progress');
+                bar.style.width = progress + '%';
+            });
+        });
+    </script>
 </body>
 </html>

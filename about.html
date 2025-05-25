@@ -4,57 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css">
-    <script>
-        function scrollDown() {
-          const element = document.getElementById('reach');
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      </script>
-    <title>About Me</title>
+    <title>Experience</title>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-               Blog Theme
+               John Doe
             </div>
             <div class="menu">
                 <a href="home.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="post.html">Post</a>
+                <a href="about.html">Experience</a>
+                <a href="post.html">Projects</a>
                 <a href="skill.html">Skills</a>
             </div>
             <div class="contact">
-                <a href="https://www.instagram.com/jugr_1697/">Contact</a>
+                <a href="https://www.linkedin.com/">LinkedIn</a>
             </div>
         </nav>
         <section class="h-text">
-            <h1>
-            Wanna Know About Me
-            </h1>
-            <button id="scrollButton" onclick="scrollDown()">Click To Know</button>
+            <h1>Professional Experience</h1>
+            <button id="scrollButton" onclick="scrollDown()">View Details</button>
         </section>
     </header>
-<div id="text">
-    <video autoplay muted loop width="1515" id="myVideo">
-        <source src="13.mp4" type="video/mp4">
-    </video>
-<p id="reach">
-    <img src="" alt="">
-1).I'm currently immersed in the world of technology as i pursues my Bachelor of Computer Applications (BCA) degree. <br>
-2).My fascination with computers and editing sparked at an early age, and the BCA course is the perfect avenue for me to transform that enthusiasm into a structured and comprehensive learning experience.<br>
-3).My daily routine is a dynamic mix of lectures, programming assignments, and collaborative projects. <br>
-4).I approach each subject with curiosity and a thirst for knowledge, embracing the challenges that come with exploring the realms of computer science.<br> 
-5).My passion for photo and video editing not only showcases my versatility but also reflects the ever-expanding horizons of possibilities in the digital age.<br>
-6).My proficiency in graphic design software and video editing tools has not gone unnoticed.<br>
-7).I have become the go-to person for classmates seeking assistance in adding a creative touch to their projects.<br>
-8).My ability to infuse a user-friendly interface with visually appealing elements has made him a sought-after collaborator in group assignments, showcasing his unique blend of technical and creative skills.<br>
-9).My passion extends to extracurricular activities, where I actively participates in photography and filmmaking on campus.<br> 
-10).As I navigates the BCA course, I envision a future where i can bridge the gap between technology and visual storytelling.<br>
-11).Whether it's designing intuitive user interfaces or crafting captivating multimedia content, I'm a quest to redefine the boundaries of what is possible in the digital landscape.<br>
-</p>
-</div>
 
+    <div id="text">
+        <div id="reach" class="experience-container">
+            <div class="experience-item">
+                <h2>Senior Full Stack Developer</h2>
+                <h3>Tech Solutions Inc. | 2021 - Present</h3>
+                <ul>
+                    <li>Led development of enterprise-level web applications</li>
+                    <li>Managed team of 5 developers for key client projects</li>
+                    <li>Implemented CI/CD pipelines reducing deployment time by 40%</li>
+                </ul>
+            </div>
 
+            <div class="experience-item">
+                <h2>Full Stack Developer</h2>
+                <h3>Digital Innovations Co. | 2019 - 2021</h3>
+                <ul>
+                    <li>Developed and maintained multiple client websites</li>
+                    <li>Implemented responsive design principles</li>
+                    <li>Optimized database queries improving performance by 50%</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h2>Junior Developer</h2>
+                <h3>StartUp Tech | 2018 - 2019</h3>
+                <ul>
+                    <li>Assisted in front-end development using React</li>
+                    <li>Contributed to API development using Node.js</li>
+                    <li>Participated in code reviews and testing</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function scrollDown() {
+            const element = document.getElementById('reach');
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    </script>
 </body>
 </html>
